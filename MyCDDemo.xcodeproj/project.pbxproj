@@ -25,6 +25,7 @@
 		A4F598F01912783C002CB331 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4F598CB1912783C002CB331 /* CoreData.framework */; };
 		A4F598F81912783C002CB331 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A4F598F61912783C002CB331 /* InfoPlist.strings */; };
 		A4F598FA1912783C002CB331 /* MyCDDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F598F91912783C002CB331 /* MyCDDemoTests.m */; };
+		A4F9403A1913C3BE00B83B52 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F940391913C3BE00B83B52 /* Event.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,8 @@
 		A4F598F51912783C002CB331 /* MyCDDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MyCDDemoTests-Info.plist"; sourceTree = "<group>"; };
 		A4F598F71912783C002CB331 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A4F598F91912783C002CB331 /* MyCDDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCDDemoTests.m; sourceTree = "<group>"; };
+		A4F940381913C3BE00B83B52 /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
+		A4F940391913C3BE00B83B52 /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +135,8 @@
 				A4F598E31912783C002CB331 /* DetailViewController.m */,
 				A4F598E51912783C002CB331 /* Images.xcassets */,
 				A4F598DC1912783C002CB331 /* MyCDDemo.xcdatamodeld */,
+				A4F940381913C3BE00B83B52 /* Event.h */,
+				A4F940391913C3BE00B83B52 /* Event.m */,
 				A4F598CE1912783C002CB331 /* Supporting Files */,
 			);
 			path = MyCDDemo;
@@ -263,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4F9403A1913C3BE00B83B52 /* Event.m in Sources */,
 				A4F598E41912783C002CB331 /* DetailViewController.m in Sources */,
 				A4F598E11912783C002CB331 /* MasterViewController.m in Sources */,
 				A4F598D81912783C002CB331 /* AppDelegate.m in Sources */,
@@ -472,6 +478,7 @@
 				A4F598FF1912783C002CB331 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A4F599001912783C002CB331 /* Build configuration list for PBXNativeTarget "MyCDDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -480,6 +487,7 @@
 				A4F599021912783C002CB331 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
