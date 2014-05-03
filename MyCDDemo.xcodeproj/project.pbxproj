@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A4F549E81914DB6D0007E0AF /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F549E71914DB6D0007E0AF /* Person.m */; };
+		A4F549EB1914DB6D0007E0AF /* Teacher.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F549EA1914DB6D0007E0AF /* Teacher.m */; };
+		A4F549EE1914DB6D0007E0AF /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F549ED1914DB6D0007E0AF /* Student.m */; };
 		A4F598C61912783C002CB331 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4F598C51912783C002CB331 /* Foundation.framework */; };
 		A4F598C81912783C002CB331 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4F598C71912783C002CB331 /* CoreGraphics.framework */; };
 		A4F598CA1912783C002CB331 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4F598C91912783C002CB331 /* UIKit.framework */; };
@@ -39,6 +42,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A4F549E61914DB6D0007E0AF /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		A4F549E71914DB6D0007E0AF /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		A4F549E91914DB6D0007E0AF /* Teacher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Teacher.h; sourceTree = "<group>"; };
+		A4F549EA1914DB6D0007E0AF /* Teacher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Teacher.m; sourceTree = "<group>"; };
+		A4F549EC1914DB6D0007E0AF /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		A4F549ED1914DB6D0007E0AF /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 		A4F598C21912783C002CB331 /* MyCDDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCDDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4F598C51912783C002CB331 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A4F598C71912783C002CB331 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -135,6 +144,12 @@
 				A4F598E31912783C002CB331 /* DetailViewController.m */,
 				A4F598E51912783C002CB331 /* Images.xcassets */,
 				A4F598DC1912783C002CB331 /* MyCDDemo.xcdatamodeld */,
+				A4F549E61914DB6D0007E0AF /* Person.h */,
+				A4F549E71914DB6D0007E0AF /* Person.m */,
+				A4F549E91914DB6D0007E0AF /* Teacher.h */,
+				A4F549EA1914DB6D0007E0AF /* Teacher.m */,
+				A4F549EC1914DB6D0007E0AF /* Student.h */,
+				A4F549ED1914DB6D0007E0AF /* Student.m */,
 				A4F940381913C3BE00B83B52 /* Event.h */,
 				A4F940391913C3BE00B83B52 /* Event.m */,
 				A4F598CE1912783C002CB331 /* Supporting Files */,
@@ -272,8 +287,11 @@
 				A4F598E41912783C002CB331 /* DetailViewController.m in Sources */,
 				A4F598E11912783C002CB331 /* MasterViewController.m in Sources */,
 				A4F598D81912783C002CB331 /* AppDelegate.m in Sources */,
+				A4F549E81914DB6D0007E0AF /* Person.m in Sources */,
+				A4F549EB1914DB6D0007E0AF /* Teacher.m in Sources */,
 				A4F598DE1912783C002CB331 /* MyCDDemo.xcdatamodeld in Sources */,
 				A4F598D41912783C002CB331 /* main.m in Sources */,
+				A4F549EE1914DB6D0007E0AF /* Student.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,7 +6,22 @@
         </attribute>
         <userInfo/>
     </entity>
+    <entity name="Person" representedClassName="Person" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sex" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Student" representedClassName="Student" parentEntity="Person" syncable="YES">
+        <attribute name="grade" attributeType="Integer 16" minValueString="1" maxValueString="6" defaultValueString="1" syncable="YES"/>
+        <relationship name="teachers" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Teacher" inverseName="students" inverseEntity="Teacher" syncable="YES"/>
+    </entity>
+    <entity name="Teacher" representedClassName="Teacher" parentEntity="Person" syncable="YES">
+        <attribute name="course" attributeType="String" defaultValueString="Objective-C" syncable="YES"/>
+        <relationship name="students" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Student" inverseName="teachers" inverseEntity="Student" syncable="YES"/>
+    </entity>
     <elements>
-        <element name="Event" positionX="-63" positionY="-27" width="128" height="60"/>
+        <element name="Event" positionX="-227" positionY="12" width="128" height="60"/>
+        <element name="Person" positionX="27" positionY="-45" width="128" height="73"/>
+        <element name="Teacher" positionX="-63" positionY="95" width="128" height="73"/>
+        <element name="Student" positionX="142" positionY="95" width="128" height="73"/>
     </elements>
 </model>
