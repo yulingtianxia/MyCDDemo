@@ -10,6 +10,8 @@
 
 #import "DetailViewController.h"
 #import "Event.h"
+#import "Student.h"
+#import "Teacher.h"
 @interface MasterViewController ()
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
 @end
@@ -47,6 +49,18 @@
     // Normally you should use accessor methods, but using KVC here avoids the need to add a custom class to the template.
 //    [newManagedObject setValue:[NSDate date] forKey:@"timeStamp"];
     newManagedObject.timeStamp = [NSDate date];
+    //新加的测试代码
+    Student *aStudent = [NSEntityDescription insertNewObjectForEntityForName:@"Student" inManagedObjectContext:context];
+    aStudent.name = @"LiLei";
+    aStudent.sex = @"male";
+    aStudent.grade = @1;
+    Teacher *aTeacher = [NSEntityDescription insertNewObjectForEntityForName:@"Teacher" inManagedObjectContext:context];
+    aTeacher.name = @"MissGao";
+    aTeacher.sex = @"female";
+    aTeacher.course = @"English";
+    [aTeacher addStudentsObject:aStudent];
+    
+    
     // Save the context.
     NSError *error = nil;
     if (![context save:&error]) {
@@ -55,6 +69,8 @@
         NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
         abort();
     }
+    
+    
 }
 
 #pragma mark - Table View
