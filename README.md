@@ -1,4 +1,4 @@
-MyCDDemo
+MyCDDemo [![Build Status](https://travis-ci.org/yulingtianxia/MyCDDemo.svg?branch=master)](https://travis-ci.org/yulingtianxia/MyCDDemo)
 ========
 
 Core Data Demo
